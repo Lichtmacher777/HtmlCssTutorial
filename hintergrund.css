@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Permanent+Marker&family=Rubik+Mono+One&display=swap');
+
+*
+
+#bg-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Move the background behind other elements */
+  overflow: hidden; /* Hide the overflow of the background */
+  background-color: rgb(11, 11, 43);
+}
+
+#bg-wrap svg {
+
+  z-index: -1; /* Move the background behind other elements */
+
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  pointer-events: none; /* Disable mouse events on the background */
+}
+img {
+  width: 20%;
+    height:auto;
+  border-radius: 50%;
+  position: fixed;
+  top: 50px;
+  left: 1400px;
+}
+h1 {
+  color: rgb(255, 255, 255);
+  mix-blend-mode: difference; /* Blend mode to reverse the color */
+  font-size: 120px;
+  font-family: 'Rubik Mono One', sans-serif;
+  position: fixed;
+  top: 100px;
+  left: 280px;
+}
+h2 {
+  color: rgb(255, 255, 255);
+  mix-blend-mode: difference; /* Blend mode to reverse the color */
+  font-size: 21px;
+  font-family: 'Rubik Mono One', sans-serif;
+  position: fixed;
+  top: 300px;
+  left: 280px;
+}
+h3 {
+  writing-mode: vertical-rl; /* Set the vertical writing mode */
+            transform: rotate(180deg); /* Rotate the text vertically */
+            white-space: nowrap; /* Prevent line breaks */
+  color: rgb(255, 255, 255);
+  mix-blend-mode: difference; /* Blend mode to reverse the color */
+  font-size: 40px;
+  font-family: 'Rubik Mono One', sans-serif;
+  position: fixed;
+  top: 80px;
+  left: 75px;
+}
+ul {
+  color: rgb(255, 255, 255);
+  mix-blend-mode: difference; /* Blend mode to reverse the color */
+  font-size: 21px;
+  font-family: 'Rubik Mono One', sans-serif;
+  position: fixed;
+  top: 600px;
+  left: 250px;
+  line-height: 2.9;
+}
+.libre_code {
+  font-family: 'Libre Barcode 39 Text', cursive;
+  color: rgb(255, 255, 255);
+  mix-blend-mode: difference; /* Blend mode to reverse the color */
+  font-size: 60px;
+  position: fixed;
+  bottom: -40px;
+  left: 190px;
+
+}
